@@ -5,7 +5,7 @@
   --white: #fff;
   --gray-light: #627aa1;
   --bgcolor-light: #f7f9fc;
-  --black:#000;
+  --black: #000;
 }
 * {
   margin: 0;
@@ -44,7 +44,7 @@ nav {
   }
   .logo_navbar {
     img {
-      width: 100px;
+      width: 40px;
     }
   }
 }
@@ -245,12 +245,14 @@ nav {
     position: relative;
     h3 {
       font-size: 22px;
+      position: relative;
+      display: inline-block;
     }
     h3::before {
       content: "";
       position: absolute;
       top: 4px;
-      left: 435px;
+      left: -10px;
       width: 9px;
       height: 9px;
       border-left: 2px solid var(--black);
@@ -259,6 +261,110 @@ nav {
     span {
       font-weight: normal;
       font-size: 14px;
+    }
+  }
+}
+.main-cards {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .box-background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .understand-quickly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    h2 {
+      color: var(--blue-drak);
+      text-align: center;
+      font-size: 30px;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    span {
+      color: var(--blue-light);
+    }
+    .understand-quickly-title::before {
+      content: "";
+      position: absolute;
+      right: -18px;
+      width: 9px;
+      height: 9px;
+      bottom: -2px;
+      border-bottom: 2px solid var(--blue-light);
+      border-right: 2px solid var(--blue-light);
+    }
+    .understand-quickly-title::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      width: 9px;
+      height: 9px;
+      top: -2px;
+      border-top: 2px solid var(--blue-light);
+      border-right: 2px solid var(--blue-light);
+    }
+    p {
+      color: var(--blue-drak);
+      text-align: center;
+      font-size: 16px;
+      width: 990px;
+      line-height: 150%;
+    }
+  }
+}
+.cards-content {
+  max-width: 900px;
+  margin: 100px auto;
+}
+.cord1-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+
+  .car1-text-effect {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    border-radius: 17px;
+    background: var(--bgcolor-hero);
+    width: 150px;
+    height: 40px;
+  }
+  h2 {
+    color: var(--blue-drak);
+    font-size: 32px;
+    line-height: 140%;
+  }
+  p {
+    margin-top: 8px;
+    color: var(--blue-drak);
+    font-size: 14px;
+    line-height: 150%;
+    width: 350px;
+  }
+
+  .card1-img {
+    position: relative;
+    .img-1{
+      width: 400px;
+      object-fit:cover ;
+    }
+    .img-2 {
+      position: absolute;
+      right: 0px;
+      top: -40px;
+      width: 90px;
+      height: 180px;
+      z-index: -10;
     }
   }
 }

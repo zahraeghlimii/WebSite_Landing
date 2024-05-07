@@ -607,4 +607,108 @@ nav .logo_navbar img {
   top: 220px;
   right: 70%;
 }
+
+.how_works {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.how_works .how_works_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.how_works .how_works_text {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.how_works .how_works_text h1 {
+  position: relative;
+  font-size: 32px;
+  color: var(--blue-drak);
+}
+
+.how_works .how_works_text h1 span {
+  color: var(--blue-light);
+}
+
+.how_works .how_works_text h1 .span_how_works::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  width: 9px;
+  height: 9px;
+  top: -2px;
+  border-top: 2px solid var(--blue-light);
+  border-right: 2px solid var(--blue-light);
+}
+
+.how_works .how_works_text h1 .span_how_works::before {
+  content: "";
+  position: absolute;
+  right: -18px;
+  width: 9px;
+  height: 9px;
+  bottom: -2px;
+  border-bottom: 2px solid var(--blue-light);
+  border-right: 2px solid var(--blue-light);
+}
+
+.how_works .how_works_text p {
+  width: 551px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--blue-drak);
+}
+
+.how_works .slide_btns {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 400px;
+}
+
+.how_works .slide_btns p {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--blue-drak);
+}
+
+.how_works .img_slider {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.how_works .img_slider p {
+  margin: 0 auto;
+  width: 669px;
+  text-align: center;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=style.css.map */

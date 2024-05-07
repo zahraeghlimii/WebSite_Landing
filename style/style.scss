@@ -354,9 +354,9 @@ nav {
 
   .card1-img {
     position: relative;
-    .img-1{
+    .img-1 {
       width: 400px;
-      object-fit:cover ;
+      object-fit: cover;
     }
     .img-2 {
       position: absolute;
@@ -365,6 +365,118 @@ nav {
       width: 90px;
       height: 180px;
       z-index: -10;
+    }
+  }
+}
+.education {
+  background-color: var(--bgcolor-hero);
+  height: 400px;
+  .education-content {
+    margin: 0 auto;
+    padding: 15px 0;
+    max-width: 900px;
+    display: flex;
+  }
+  .education-texts-content {
+    margin: 32px auto;
+    color: var(--blue-drak);
+    h4 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 2;
+    }
+    h2 {
+      margin-bottom: 10px;
+      position: relative;
+      span {
+        color: var(--blue-light);
+      }
+      .span-education_title::after {
+        content: "";
+        position: absolute;
+        right: -18px;
+        width: 9px;
+        height: 9px;
+        top: -2px;
+        border-top: 2px solid var(--blue-light);
+        border-right: 2px solid var(--blue-light);
+      }
+      .span-education_title::before{
+        content: "";
+        position: absolute;
+        right: -18px;
+        width: 9px;
+        height: 9px;
+        bottom: -2px;
+        border-bottom: 2px solid var(--blue-light);
+        border-right: 2px solid var(--blue-light);
+      }
+    }
+    p {
+      width: 410px;
+      margin-bottom: 40px;
+    }
+  }
+  .btn-education-title {
+    display: flex;
+    width: 328px;
+    justify-content: space-around;
+
+    .btn-1 {
+      all: unset;
+      background-color: var(--blue-light);
+      width: 80px;
+      padding: 13px 50px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 12px;
+      a {
+        color: var(--white);
+        text-decoration: none;
+      }
+    }
+    .btn_2 {
+      all: unset;
+      .link-btn-education {
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        gap: 10px;
+        color: var(--blue-light);
+      }
+    }
+  }
+  .education-imgs-content {
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 300px;
+    max-width: 380px;
+    margin: 32px auto 0;
+    .icon {
+      position: absolute;
+      width: 60px;
+      top: 5%;
+      left: 23%;
+    }
+    .img-woman {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .img-man {
+      position: absolute;
+      width: 75%;
+      bottom: 10px;
+      left: 50px;
+      z-index: 1;
+    }
+    .img-dots {
+      position: absolute;
+      top: 220px;
+      right: 70%;
     }
   }
 }

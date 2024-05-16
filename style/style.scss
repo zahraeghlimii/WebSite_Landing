@@ -27,18 +27,19 @@ body {
 }
 
 header {
-  position: fixed;
-  width: 100%;
+  position: relative;
   height: 90px;
-  background-color: #fff;
   z-index: 20;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   nav {
+    position: fixed;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     object-fit: cover;
+    width: 100%;
+    background-color: #fff;
     ul {
       list-style-type: none;
       display: flex;

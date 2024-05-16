@@ -32,16 +32,15 @@ body {
 }
 
 header {
-  position: fixed;
-  width: 100%;
+  position: relative;
   height: 90px;
-  background-color: #fff;
   z-index: 20;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 header nav {
+  position: fixed;
   padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +53,8 @@ header nav {
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  background-color: #fff;
 }
 
 header nav ul {

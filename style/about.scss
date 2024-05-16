@@ -19,19 +19,21 @@
   margin: 0 auto;
 }
 header {
-  //   position: fixed;
+  position: relative;
   width: 100%;
   height: 90px;
-  background-color: #fff;
+
   z-index: 20;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   nav {
+    position: fixed;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     object-fit: cover;
-
+    width: 100%;
+    background-color: #fff;
     ul {
       list-style-type: none;
       display: flex;
@@ -214,6 +216,9 @@ header {
     max-width: 1920px;
     width: 1100px;
     margin: 30px auto;
+    a {
+      text-decoration: none;
+    }
     .card-member-1 {
       position: relative;
       top: 0;
@@ -254,6 +259,84 @@ header {
       cursor: pointer;
       top: -10px;
     }
+    .modal {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(77, 77, 77, 0.7);
+      transition: all 0.4s;
+      visibility: hidden;
+      opacity: 0;
+      .modalcontent {
+        margin-top: 30px;
+        position: relative;
+        background: #fff;
+        padding: 1em 2em;
+        border-radius: 4px;
+        display: flex;
+        gap: 20px;
+        max-width: 800px;
+        height: 500px;
+        .imgs-modal {
+          text-align: center;
+          margin-top: 20px;
+          .img-bg {
+            width: 200px;
+            margin-bottom: 10px;
+          }
+          .icon-1 {
+            margin-right: 20px;
+          }
+          .icon-2 {
+            margin-right: 20px;
+          }
+        }
+        .texts-modal {
+          margin-top: 10px;
+          h3 {
+            color: #627aa1;
+            line-height: 2;
+            font-size: 24px;
+            font-weight: normal;
+          }
+          h2 {
+            color: #1e293b;
+            font-size: 34px;
+          }
+          p {
+            margin-top: 20px;
+            width: 350px;
+            color: #1e293b;
+            font-size: 14px;
+          }
+        }
+        .modalclose {
+          position: absolute;
+          top: 0;
+          right: 15px;
+          color: #585858;
+          text-decoration: none;
+          font-size: 36px;
+          margin: 20px;
+          border-radius: 30.833px;
+          border: 0.833px solid #ced6e2;
+          background: #f7f9fc;
+          width: 43px;
+          text-align: center;
+        }
+      }
+    }
+    .modal:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+
   }
 }
 .info-person {

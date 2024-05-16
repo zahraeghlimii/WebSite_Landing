@@ -23,15 +23,16 @@
 }
 
 header {
+  position: relative;
   width: 100%;
   height: 90px;
-  background-color: #fff;
   z-index: 20;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 header nav {
+  position: fixed;
   padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +45,8 @@ header nav {
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  background-color: #fff;
 }
 
 header nav ul {
@@ -281,6 +284,10 @@ header .navbar_btns .box_lang {
   margin: 30px auto;
 }
 
+.main-cards .main-cards-member a {
+  text-decoration: none;
+}
+
 .main-cards .main-cards-member .card-member-1 {
   position: relative;
   top: 0;
@@ -337,6 +344,103 @@ header .navbar_btns .box_lang {
 .main-cards .main-cards-member .card-member-1:hover {
   cursor: pointer;
   top: -10px;
+}
+
+.main-cards .main-cards-member .modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(77, 77, 77, 0.7);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-cards .main-cards-member .modal .modalcontent {
+  margin-top: 30px;
+  position: relative;
+  background: #fff;
+  padding: 1em 2em;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  height: 500px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .imgs-modal {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .imgs-modal .img-bg {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .imgs-modal .icon-1 {
+  margin-right: 20px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .imgs-modal .icon-2 {
+  margin-right: 20px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .texts-modal {
+  margin-top: 10px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .texts-modal h3 {
+  color: #627aa1;
+  line-height: 2;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .texts-modal h2 {
+  color: #1e293b;
+  font-size: 34px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .texts-modal p {
+  margin-top: 20px;
+  width: 350px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.main-cards .main-cards-member .modal .modalcontent .modalclose {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: #585858;
+  text-decoration: none;
+  font-size: 36px;
+  margin: 20px;
+  border-radius: 30.833px;
+  border: 0.833px solid #ced6e2;
+  background: #f7f9fc;
+  width: 43px;
+  text-align: center;
+}
+
+.main-cards .main-cards-member .modal:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 .info-person {

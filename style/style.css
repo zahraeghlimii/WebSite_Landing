@@ -7,6 +7,7 @@
   --bgcolor-light: #f7f9fc;
   --black: #000;
   --border-color: #ced6e2;
+  --bg-dropdown:#b8d7e4;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
 
 header {
   position: relative;
-  height: 90px;
+  height: 77px;
   z-index: 20;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
@@ -79,7 +80,7 @@ header .navbar_btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 header .navbar_btns input {
@@ -88,13 +89,14 @@ header .navbar_btns input {
   width: 110px;
   border: 1px solid var(--blue-light);
   border-radius: 8px;
-  height: 50px;
+  height: 40px;
   text-align: center;
   color: var(--blue-light);
   letter-spacing: 0.5px;
 }
 
 header .navbar_btns .box_lang {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +107,59 @@ header .navbar_btns .box_lang {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
-  color: var(--blue-drak);
+}
+
+header .navbar_btns .box_lang .lang-list-dropdown {
+  position: absolute;
+  top: 44px;
+  left: -41px;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  background-color: white;
+  border-radius: 15px;
+  width: 250px;
+  padding: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+header .navbar_btns .box_lang .lang-list-dropdown .item-dropdown {
+  list-style: none;
+  padding: 10px 12px;
+  border-radius: 15px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+header .navbar_btns .box_lang .lang-list-dropdown .item-dropdown:hover {
+  background-color: var(--bg-dropdown);
+  color: #fff;
+}
+
+header .navbar_btns .box_lang:hover {
+  cursor: pointer;
+}
+
+header .navbar_btns .box_lang:hover .lang-list-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+header .navbar_btns .box_lang:focus .lang-list-dropdown {
+  opacity: 1;
+  visibility: visible;
 }
 
 .container-main {

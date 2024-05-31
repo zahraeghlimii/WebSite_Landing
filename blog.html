@@ -1,109 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/blog.css">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/blog.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Blog</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <nav>
-              <div class="logo_navbar">
-                <a href="index.html"
-                  ><img src="imgs/img-logo.png" alt="img_logo"
-                /></a>
-              </div>
-              <div class="navbar_menu">
-                <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="#">Blog</a></li>
+      <header>
+        <nav class="menu-desktop">
+          <a href="index.html" class="img-logo">
+            <img src="imgs/img-logo.png" alt="img-logo" />
+          </a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+          </label>
+          <div class="navbar_menu">
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="navbar_btns">
+              <div class="box_lang">
+                <img src="imgs/nav-icon-globe.png" alt="img_lang" />
+                <a href="#">English</a>
+                <img
+                  src="imgs/arrow-down.png"
+                  alt="img_lang"
+                  class="arrow-down"
+                />
+                <ul class="lang-list-dropdown">
+                  <li class="item-dropdown">Arabic</li>
+                  <li class="item-dropdown">中国人</li>
+                  <li class="item-dropdown">French</li>
                 </ul>
               </div>
-              <div class="navbar_btns">
-                <div class="box_lang">
-                  <img src="imgs/nav-icon-globe.png" alt="img_lang" />
-                  <a href="#">English</a>
-                  <img src="imgs/arrow-down.png" alt="img_lang" class="arrow-down" />
-                  <ul class="lang-list-dropdown">
+              <input type="button" value="Log In" class="btn_header" />
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="main-hero">
+          <div class="main-text">
+            <img
+              class="main-icon"
+              src="imgs/graphic dot.svg"
+              alt="graphic dot"
+            />
+            <h4 class="h4_main_text">Get in Touch</h4>
+            <h1 class="h1_main_text">
+              Contact with
+              <span>Lorem</span>
+            </h1>
+          </div>
+          <div class="main-img">
+            <img src="imgs/hero-pic.png" alt="hero-pic" />
+          </div>
+        </section>
+        <section class="info-form">
+          <div class="info-form-text">
+            <h2>Get in Touch with <span>Lorem</span> Image Solutions</h2>
+            <p>
+              Connect with Lorem for cutting-edge image processing solutions.
+              Enhance, manipulate, and analyze your images with ease. Reach out
+              to us today!
+            </p>
+          </div>
+          <div class="form-content">
+            <form action=""></form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-imgs">
+            <div class="footer-logo">
+              <img src="imgs/img-logo.png" alt="img-logo" />
+            </div>
+            <div class="footer-icon">
+              <a href="">
+                <img
+                  src="imgs/footer-icon-LinkedIn.png"
+                  alt="footer-icon-LinkedIn"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="imgs/footer-icon-youtube.png"
+                  alt="footer-icon-youtube"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-text">
+            <div class="footer-copypaste">
+              <p>Copyright @2024 by Rovren. All Rights Reserved</p>
+            </div>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookies Settings</a>
+              <div class="landing-footer">
+                <a href="#">
+                  <img
+                    src="imgs/footer-icon-globe.png"
+                    alt="footer-icon-globe"
+                  />
+                  English
+                  <img
+                    src="imgs/arrow-down-footer.png"
+                    alt="arrow-down-footer"
+                  />
+                  <ul class="lang-footer-list-dropdown">
                     <li class="item-dropdown">Arabic</li>
                     <li class="item-dropdown">中国人</li>
                     <li class="item-dropdown">French</li>
                   </ul>
-                </div>
-                <input type="button" value="Log In" class="btn_header" />
-              </div>
-            </nav>
-          </header>
-          <main>
-            <section class="main-hero">
-              <div class="main-text">
-                <img
-                  class="main-icon"
-                  src="imgs/graphic dot.svg"
-                  alt="graphic dot"
-                />
-                <h4 class="h4_main_text">We’re Worldwide</h4>
-                <h1 class="h1_main_text">
-                  About the
-                  <span>Lorem</span>
-                </h1>
-              </div>
-              <div class="main-img">
-                <img src="imgs/hero-pic.png" alt="hero-pic" />
-              </div>
-            </section>
-            <section class="form"></section>
-          </main>
-          <footer>
-            <div class="footer-content">
-              <div class="footer-imgs">
-                <div class="footer-logo">
-                  <img src="imgs/img-logo.png" alt="img-logo" />
-                </div>
-                <div class="footer-icon">
-                  <a href="">
-                    <img
-                      src="imgs/footer-icon-LinkedIn.png"
-                      alt="footer-icon-LinkedIn"
-                    />
-                  </a>
-                  <a href="">
-                    <img
-                      src="imgs/footer-icon-youtube.png"
-                      alt="footer-icon-youtube"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="footer-text">
-                <div class="footer-copypaste">
-                  <p>Copyright @2024 by Rovren. All Rights Reserved</p>
-                </div>
-                <div class="footer-links">
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms of Service</a>
-                  <a href="#">Cookies Settings</a>
-                  <div class="landing-footer">
-                    <a href="#">
-                      <img
-                        src="imgs/footer-icon-globe.png"
-                        alt="footer-icon-globe"
-                      />
-                      English
-                      <img src="imgs/arrow-down-footer.png" alt="arrow-down-footer" />
-                      <ul class="lang-footer-list-dropdown">
-                        <li class="item-dropdown">Arabic</li>
-                        <li class="item-dropdown">中国人</li>
-                        <li class="item-dropdown">French</li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
-          </footer>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,118 @@
+//take_content
+.take_content {
+    margin: 0 auto;
+    background-color: $bgcolor-hero;
+    .take_title {
+      margin: 50px auto;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 80px;
+      p {
+        text-align: center;
+        width: 560px;
+        margin-top: 20px;
+        line-height: 2;
+      }
+  
+      .article_take_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 48px;
+        img {
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .box_article_take {
+      max-width: 1000px;
+      margin: 10px auto;
+      color: $blue-drak;
+      .article_take_1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        h2 {
+          position: relative;
+          span {
+            position: absolute;
+            color: $blue-light;
+          }
+          .span_take_1::after {
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-top: 2px solid $blue-light;
+            border-right: 2px solid $blue-light;
+            top: -4px;
+            right: -18px;
+          }
+          .span_take_1::before {
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-bottom: 2px solid $blue-light;
+            border-right: 2px solid $blue-light;
+            bottom: -6px;
+            right: -18px;
+          }
+        }
+        p {
+          margin-top: 17px;
+          width: 460px;
+          line-height: 1.5;
+        }
+        .img-article-1 {
+          width: 400px;
+          object-fit: cover;
+        }
+      }
+      .article_take_2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .img-article-2 {
+          width: 400px;
+        }
+        p {
+          width: 480px;
+          line-height: 1.5;
+          margin-top: 10px;
+        }
+        h2 {
+          position: relative;
+          span {
+            color: $blue-light;
+          }
+        }
+        .h2_take-2::after {
+          position: absolute;
+          content: "";
+          width: 9px;
+          height: 9px;
+          border-top: 2px solid $blue-drak;
+          border-right: 2px solid $blue-drak;
+          top: -6px;
+          right: -3px;
+        }
+        .h2_take-2::before {
+          position: absolute;
+          content: "";
+          width: 9px;
+          height: 9px;
+          border-bottom: 2px solid $blue-drak;
+          border-right: 2px solid $blue-drak;
+          bottom: -6px;
+          right: -3px;
+        }
+      }
+    }
+  }
+  

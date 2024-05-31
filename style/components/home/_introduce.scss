@@ -1,0 +1,94 @@
+//
+.box-introduce {
+    max-width: 1290px;
+    margin: -50px auto;
+    position: relative;
+    height: 480px;
+    .introduce_imgs {
+      margin: 100px auto;
+      position: relative;
+    }
+  
+    .img-jupytervideo {
+      position: absolute;
+      right: 39%;
+      top: 40px;
+    }
+    .img-rovrenvideo {
+      position: absolute;
+      z-index: 2;
+      top: -290%;
+      left: 40%;
+    }
+    .graphic-dot-img {
+      position: absolute;
+      top: 120px;
+      width: 170px;
+      height: 400px;
+      right: 40px;
+    }
+  }
+  .box-arrow {
+    width: 200px;
+    margin: 40px 300px;
+  
+    .img-arrow {
+      position: absolute;
+      z-index: 1;
+      width: 170px;
+      object-fit: cover;
+      bottom: -10px;
+      left: 23%;
+    }
+    .arrow-text {
+      margin-left: 100px;
+      width: 144px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      // background-color: aqua;
+      line-height: 1;
+      h2 {
+        text-align: right;
+        margin-bottom: 10px;
+        color: $blue-light;
+      }
+    }
+  }
+  
+  .intro-text {
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+    line-height: 1.8;
+    h6 {
+      font-size: 14px;
+      color: $gray-light;
+    }
+    h2 {
+      font-size: 30px;
+      position: relative;
+    }
+    span {
+      color: $blue-light;
+    }
+  }
+  .h2-inrto-text span::before {
+    content: "";
+    position: absolute;
+    right: -16px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid $blue-light;
+    border-bottom: 2px solid $blue-light;
+    bottom: -1px;
+  }
+  .h2-inrto-text ::after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid $blue-light;
+    border-top: 2px solid $blue-light;
+  }

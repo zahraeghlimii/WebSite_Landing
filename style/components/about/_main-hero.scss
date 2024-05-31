@@ -1,0 +1,38 @@
+//main-hero
+.main-hero {
+  top: 70px;
+  max-width: 1920px;
+  position: relative;
+  background-color: $bgcolor-hero;
+  display: flex;
+  justify-content: space-between;
+
+  .main-text {
+    height: 200px;
+    margin-left: 110px;
+    line-height: 1.5;
+    img {
+      width: 130px;
+    }
+    h4 {
+      color: $blue-drak;
+      font-size: 20px;
+    }
+    h1 {
+      color: $blue-drak;
+      font-size: 42px;
+      span {
+        color: $blue-light;
+      }
+    }
+  }
+  .main-img {
+    img {
+      position: absolute;
+      right: 0;
+      object-fit: cover;
+      height: 230px;
+      width: 630px;
+    }
+  }
+}

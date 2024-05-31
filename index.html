@@ -3,38 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <title>website_landing</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <nav>
-          <div class="logo_navbar">
-            <a href="#"><img src="imgs/img-logo.png" alt="img_logo" /></a>
-          </div>
+        <nav class="menu-desktop">
+          <a href="index.html" class="img-logo">
+            <img src="imgs/img-logo.png" alt="img-logo" />
+          </a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+          </label>
           <div class="navbar_menu">
             <ul>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
-          </div>
-          <div class="navbar_btns">
-            <div class="box_lang">
-              <img src="imgs/nav-icon-globe.png" alt="img_lang" />
-              <a href="#">English</a>
-              <img
-                src="imgs/arrow-down.png"
-                alt="img_lang"
-                class="icon-arrow-lang"
-              />
-              <ul class="lang-list-dropdown">
-                <li class="item-dropdown">Arabic</li>
-                <li class="item-dropdown">中国人</li>
-                <li class="item-dropdown">French</li>
-              </ul>
+            <div class="navbar_btns">
+              <div class="box_lang">
+                <img src="imgs/nav-icon-globe.png" alt="img_lang" />
+                <a href="#">English</a>
+                <img
+                  src="imgs/arrow-down.png"
+                  alt="img_lang"
+                  class="arrow-down"
+                />
+                <ul class="lang-list-dropdown">
+                  <li class="item-dropdown">Arabic</li>
+                  <li class="item-dropdown">中国人</li>
+                  <li class="item-dropdown">French</li>
+                </ul>
+              </div>
+              <input type="button" value="Log In" class="btn_header" />
             </div>
-            <input type="button" value="Log In" class="btn_header" />
           </div>
         </nav>
       </header>
@@ -421,7 +435,10 @@
                     alt="footer-icon-globe"
                   />
                   English
-                  <img src="imgs/arrow-down-footer.png" alt="arrow-down-footer" />
+                  <img
+                    src="imgs/arrow-down-footer.png"
+                    alt="arrow-down-footer"
+                  />
                   <ul class="lang-footer-list-dropdown">
                     <li class="item-dropdown">Arabic</li>
                     <li class="item-dropdown">中国人</li>

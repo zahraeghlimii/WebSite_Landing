@@ -1,0 +1,30 @@
+.info-form {
+  height: 90vh;
+  border: 2px solid red;
+  margin: 120px 0;
+  .info-form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 740px;
+    height: 180px;
+    border: 2px solid;
+    margin: 30px auto;
+    text-align: center;
+    color: var(--blue-drak);
+    gap: 10px;
+    h2 {
+      font-size: 30px;
+      line-height: 1.5;
+      span {
+        color: var(--blue-light);
+      }
+    }
+    p {
+      width: 500px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+  }
+}

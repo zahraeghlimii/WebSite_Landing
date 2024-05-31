@@ -1,0 +1,55 @@
+//main-hero
+.main-hero {
+    background: $bgcolor-hero;
+    height: 600px;
+    border-radius: 0 0 40% 40%;
+  }
+  .box-hero {
+    object-fit: cover;
+    position: relative;
+    .box-hero-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .box-hero-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .box-content-hero {
+    padding-top: 210px;
+    height: 500px;
+    color: $blue-drak;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    h6 {
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 50px;
+      span {
+        color: $blue-light;
+      }
+    }
+    p {
+      margin: 16px auto 0;
+      color: $blue-drak;
+      padding-top: 8px;
+      line-height: 1.6;
+    }
+    button {
+      all: unset;
+      background-color: $blue-light;
+      margin-top: 20px;
+      padding: 10px 34px;
+      color: $white;
+      border-radius: 5px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }

@@ -290,7 +290,7 @@ header .menu-desktop .navbar_menu .navbar_btns .box_lang:focus .lang-list-dropdo
   }
 }
 
-@container header (width > 400px) {}.main-hero {
+.main-hero {
   background: #f4f8fd;
   height: 600px;
   border-radius: 0 0 40% 40%;
@@ -466,6 +466,13 @@ header .menu-desktop .navbar_menu .navbar_btns .box_lang:focus .lang-list-dropdo
   height: 9px;
   border-right: 2px solid #2977d7;
   border-top: 2px solid #2977d7;
+}
+
+@media screen and (min-width: 992px) {
+  .box-introduce {
+    width: 700px;
+    border: 2px solid;
+  }
 }
 
 .trusted-by {
@@ -1198,5 +1205,12 @@ footer .footer-content .footer-text .footer-links .landing-footer:hover .lang-fo
 footer .footer-content .footer-text .footer-links .landing-footer:focus .lang-footer-list-dropdown {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .footer-links a {
+    color: red;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

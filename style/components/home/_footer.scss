@@ -93,3 +93,12 @@ footer {
     }
   }
 }
+
+@media (max-width:768px){
+  .footer-links{
+    a{
+      color: red;
+      font-size: 10px;
+    }
+  }
+}

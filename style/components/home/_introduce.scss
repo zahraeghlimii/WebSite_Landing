@@ -92,3 +92,9 @@
     border-right: 2px solid $blue-light;
     border-top: 2px solid $blue-light;
   }
+  @media screen and (min-width: 992px){
+    .box-introduce{
+      width: 700px;
+      border: 2px solid;
+    }
+  }

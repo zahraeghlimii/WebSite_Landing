@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +71,10 @@
         </section>
         <section class="info-form">
           <div class="info-form-text">
-            <h2>Get in Touch with <span>Lorem</span> Image Solutions</h2>
+            <h2>
+              Get in Touch with <span class="span-info">Lorem</span> Image
+              Solutions
+            </h2>
             <p>
               Connect with Lorem for cutting-edge image processing solutions.
               Enhance, manipulate, and analyze your images with ease. Reach out
@@ -80,7 +82,111 @@
             </p>
           </div>
           <div class="form-content">
-            <form action=""></form>
+            <form action="">
+              <div class="input-group">
+                <input type="email" required />
+                <label for="">Email</label>
+              </div>
+              <div class="input-group">
+                <input type="text" required />
+                <label for="">Frist Name</label>
+              </div>
+              <div class="input-group">
+                <input type="text" required />
+                <label for="">Last Name</label>
+              </div>
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="Student"
+                      name="category"
+                    />
+                    <label for="Student">Student</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="Educator"
+                      name="category"
+                    />
+                    <label for="Educator">Educator</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="Computer"
+                      name="category"
+                    />
+                    <label for="Computer">Computer vision specialist</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="Developer"
+                      name="category"
+                    />
+                    <label for="Developer">Developer</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="Other"
+                      name="category"
+                    />
+                    <label for="Other">Other...</label>
+                  </div>
+                </div>
+                <div class="selected">Select Video Category</div>
+              </div>
+
+              <textarea placeholder="Description" ></textarea>
+              <div class="box-btn">
+                <button type="submit"><a href="#modalbox">Connect Now</a></button>
+              </div>
+          
+            </form>
+            <p>
+              <img src="imgs/blog/HubSpot-Marketing-Hub 1.png" alt="HubSpot-Marketing-Hub">
+              <span>
+                Create your own free form
+              </span> 
+              to Generate lead for free form
+            </p>
+            <div class="box-modal">
+              <div id="modalbox" class="modal">
+              
+                <div class="modalcontent">
+                  <div class="img-modal">
+                    <img
+                      src="imgs/blog/messeg.png"
+                      alt="profile pic"
+                      class="img-bg"
+                    />
+                    
+                  </div>
+                  <div class="texts-modal">
+                    <h3>Thank You for Reaching Out!</h3>
+                    <p>
+                      We've got your message and we're on it! Expect to hear back from us soon.Thank you for choosing us
+                    </p>
+                  </div>
+                  <a href="#" class="modalclose">&times;</a>
+                </div>
+              </div>
+              <a href="#modalbox" class="link-modal">
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -136,5 +242,6 @@
         </div>
       </footer>
     </div>
+    <script src="style/main.js"></script>
   </body>
 </html>

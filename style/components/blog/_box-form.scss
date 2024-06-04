@@ -50,48 +50,48 @@
   margin: 0 auto;
   width: 350px;
   form {
-    margin-top: 20px;
-    .input-group{
+    margin: 20px auto;
+    width: 350px;
+    .input-group {
       position: relative;
       margin: 20px 0;
-      input{
-        width: 350px;
+      input {
+        width: 100%;
         height: 40px;
         font-size: 14px;
         color: #979fa8;
-        background: #EFF2F6;
-        border: 1px solid #627AA1;
+        background: #eff2f6;
+        border: 1px solid #627aa1;
         outline: none;
         border-radius: 5px;
         padding: 0 10px;
       }
-      label{
+      label {
         position: absolute;
         top: 50%;
         left: 5px;
         transform: translateY(-50%);
         font-size: 14px;
-        color: #627AA1;
+        color: #627aa1;
         padding: 0 10px;
-        transition: .5s;
+        transition: 0.5s;
       }
-
     }
-    .input-group input:focus ~ label ,
-    .input-group input:valid~label{
+    .input-group input:focus ~ label,
+    .input-group input:valid ~ label {
       top: 0;
       font-size: 15px;
-      background: linear-gradient(#FFFFFF,#EFF2F6);
+      background: linear-gradient(#ffffff, #eff2f6);
       z-index: 20;
     }
     .select-box {
       position: relative;
       display: flex;
-      width: 350px;
+      width: 100%;
       flex-direction: column;
     }
     .select-box .options-container {
-      background: #EFF2F6;
+      background: #eff2f6;
       color: #f5f6fa;
       max-height: 0;
       width: 100%;
@@ -104,14 +104,14 @@
       top: 48px;
     }
     .selected {
-      background: #EFF2F6;
+      background: #eff2f6;
       border-radius: 8px;
       margin-bottom: 8px;
-      color: #627AA1;
+      color: #627aa1;
       position: relative;
       font-size: 14px;
       order: 0;
-      border: 1px solid #627AA1;
+      border: 1px solid #627aa1;
     }
     .selected::after {
       content: "";
@@ -140,53 +140,54 @@
       cursor: pointer;
     }
     .select-box .option:hover {
-      background: #CED6E2;
+      background: #ced6e2;
       border-radius: 10px;
     }
     .select-box label {
       cursor: pointer;
       font-size: 14px;
-      color: #627AA1;
+      color: #627aa1;
     }
     .select-box .option .radio {
       display: none;
     }
-    textarea{
+    textarea {
       height: 169px;
-      width: 350px;
-      color:#627AA1 ;
-      background: #EFF2F6;
+      width: 100%;
+      color: #627aa1;
+      background: #eff2f6;
       outline: none;
-      border: 1px solid #627AA1;
+      border: 1px solid #627aa1;
       padding: 10px;
       font-size: 14px;
       border-radius: 8px;
       margin-bottom: 10px;
       resize: none;
     }
-button{
-  all: unset;
-  a{
-    width: 350px;
-    background-color: #1a73e8;
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-align: center;
+    button {
+      all: unset;
+      a {
+        width: 350px;
+        background-color: #1a73e8;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 8px;
+        text-align: center;
+      }
+    }
   }
-}
-  }
-  P{
+  P {
     display: flex;
     align-items: center;
     margin-top: 10px;
     font-size: 12px;
     gap: 5px;
-    color: #1E293B;
-    span{
-      color: #F7761E;
+    color: #1e293b;
+    width: 100%;
+    span {
+      color: #f7761e;
     }
   }
   .modal {
@@ -202,6 +203,7 @@ button{
     transition: all 0.4s;
     visibility: hidden;
     opacity: 0;
+    z-index: 100;
     .modalcontent {
       flex-direction: column;
       align-items: center;
@@ -218,12 +220,9 @@ button{
       width: 550px;
       .img-modal {
         text-align: center;
-        
         .img-bg {
           width: 200px;
-          
         }
-
       }
       .texts-modal {
         h3 {
@@ -233,7 +232,7 @@ button{
         }
         p {
           width: 370px;
-          color: #1E293B;
+          color: #1e293b;
           font-size: 14px;
           text-align: center;
           margin-bottom: 50px;
@@ -260,6 +259,90 @@ button{
     opacity: 1;
   }
 }
-@media (min-width: 1920px) {
-  
+@media (max-width: 768px) {
+  .info-form {
+    position: relative;
+    .info-form-text {
+      width: 600px;
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 13px;
+        width: 500px;
+      }
+    }
+    .form-content {
+      .modalcontent {
+        width: 420px;
+        .texts-modal {
+          h3 {
+            font-size: 26px;
+            text-align: center;
+          }
+          p {
+            font-size: 14px;
+            text-align: center;
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .info-form {
+    position: relative;
+    .info-form-text {
+      width: 300px;
+      h2 {
+        font-size: 26px;
+        .span-info::after {
+          position: absolute;
+          content: "";
+          width: 9px;
+          height: 9px;
+          top: 1px;
+          right: 25px;
+          border-top: 2px solid $blue-drak;
+          border-right: 2px solid $blue-drak;
+        }
+      }
+      p {
+        font-size: 13px;
+        width: 310px;
+      }
+    }
+    .form-content {
+      form {
+        width: 290px;
+
+        a {
+          width: 290px;
+        }
+      }
+      p {
+        margin: 10px 20px;
+        font-size: 11px;
+        img {
+          width: 16px;
+        }
+      }
+      .modalcontent {
+        width: 350px;
+        .texts-modal {
+          h3 {
+            font-size: 20px;
+            text-align: center;
+          }
+          p {
+            font-size: 12px;
+            text-align: center;
+            width: 230px;
+          }
+        }
+      }
+    }
+  }
 }

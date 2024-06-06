@@ -1,14 +1,13 @@
-//
+//box-introduce
+
 .box-introduce {
-    max-width: 1290px;
-    margin: -50px auto;
+  max-width: 1290px;
+  margin: -50px auto;
+  position: relative;
+  height: 480px;
+  .introduce_imgs {
+    margin: 100px auto;
     position: relative;
-    height: 480px;
-    .introduce_imgs {
-      margin: 100px auto;
-      position: relative;
-    }
-  
     .img-jupytervideo {
       position: absolute;
       right: 39%;
@@ -27,35 +26,34 @@
       height: 400px;
       right: 40px;
     }
-  }
-  .box-arrow {
-    width: 200px;
-    margin: 40px 300px;
-  
-    .img-arrow {
-      position: absolute;
-      z-index: 1;
-      width: 170px;
-      object-fit: cover;
-      bottom: -10px;
-      left: 23%;
-    }
-    .arrow-text {
-      margin-left: 100px;
-      width: 144px;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      // background-color: aqua;
-      line-height: 1;
-      h2 {
-        text-align: right;
-        margin-bottom: 10px;
-        color: $blue-light;
+    .box-arrow {
+      width: 200px;
+      margin: 40px 300px;
+
+      .img-arrow {
+        position: absolute;
+        z-index: 1;
+        width: 170px;
+        object-fit: cover;
+        bottom: -10px;
+        left: 23%;
+      }
+      .arrow-text {
+        margin-left: 100px;
+        width: 144px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        // background-color: aqua;
+        line-height: 1;
+        h2 {
+          text-align: right;
+          margin-bottom: 10px;
+          color: $blue-light;
+        }
       }
     }
   }
-  
   .intro-text {
     position: absolute;
     bottom: 100px;
@@ -72,29 +70,219 @@
     span {
       color: $blue-light;
     }
-  }
-  .h2-inrto-text span::before {
-    content: "";
-    position: absolute;
-    right: -16px;
-    width: 9px;
-    height: 9px;
-    border-right: 2px solid $blue-light;
-    border-bottom: 2px solid $blue-light;
-    bottom: -1px;
-  }
-  .h2-inrto-text ::after {
-    content: "";
-    position: absolute;
-    right: -18px;
-    width: 9px;
-    height: 9px;
-    border-right: 2px solid $blue-light;
-    border-top: 2px solid $blue-light;
-  }
-  @media screen and (min-width: 992px){
-    .box-introduce{
-      width: 700px;
-      border: 2px solid;
+    .h2-inrto-text ::before {
+      content: "";
+      position: absolute;
+      right: -16px;
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid $blue-light;
+      border-bottom: 2px solid $blue-light;
+      bottom: -1px;
+    }
+    .h2-inrto-text ::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid $blue-light;
+      border-top: 2px solid $blue-light;
     }
   }
+}
+@media screen and (max-width: 1200px) {
+  .box-introduce {
+    position: relative;
+    width: 850px;
+    .introduce_imgs {
+      position: relative;
+      .img-rovrenvideo {
+        width: 500px;
+        position: absolute;
+        top: -70px;
+        right: 80px;
+      }
+      .img-jupytervideo {
+        width: 450px;
+      }
+      .box-arrow {
+        position: relative;
+        .arrow-text {
+          position: absolute;
+          right: 140px;
+        }
+        .img-arrow {
+          position: absolute;
+          width: 100px;
+          left: -130px;
+          bottom: -50px;
+        }
+      }
+      .graphic-dot-img {
+        position: absolute;
+        width: 90px;
+        right: 40px;
+        top: 30px;
+      }
+    }
+    .intro-text {
+      position: absolute;
+      z-index: 10;
+      right: 160px;
+      bottom: 200px;
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 870px) {
+  .box-introduce {
+    width: 500px;
+    top: -100px;
+    bottom: 0;
+    position: relative;
+    .introduce_imgs {
+      position: relative;
+      .img-rovrenvideo {
+        position: absolute;
+        width: 310px;
+        top: -20px;
+        left: 200px;
+      }
+      .img-jupytervideo {
+        width: 260px;
+        position: absolute;
+        left: 10px;
+      }
+      .graphic-dot-img {
+        position: absolute;
+        width: 90px;
+        right: -15px;
+        top: 0px;
+      }
+      .box-arrow {
+        position: relative;
+        .arrow-text {
+          position: absolute;
+          right: 270px;
+          bottom: -30px;
+          p {
+            font-size: 13px;
+          }
+          h2 {
+            text-align: left;
+            font-size: 20px;
+          }
+        }
+        .img-arrow {
+          position: absolute;
+          width: 100px;
+          left: -270px;
+          bottom: -40px;
+        }
+      }
+    }
+    .intro-text {
+      position: absolute;
+      z-index: 10;
+      right: 100px;
+      bottom: 270px;
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      h6 {
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .h2-inrto-text ::before {
+        border-right: 1px solid $blue-light;
+        border-bottom: 1px solid $blue-light;
+      }
+      .h2-inrto-text ::after {
+        border-right: 1px solid $blue-light;
+        border-top: 1px solid $blue-light;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .box-introduce {
+    width: 400px;
+    .introduce_imgs {
+      position: relative;
+      .img-rovrenvideo {
+        position: absolute;
+        width: 200px;
+        top: -20px;
+        left: 135px;
+      }
+      .img-jupytervideo {
+        width: 180px;
+        position: absolute;
+        left: 10px;
+      }
+      .graphic-dot-img {
+        position: absolute;
+        width: 70px;
+        right: 40px;
+        top: -90px;
+      }
+      .box-arrow {
+        position: relative;
+        .img-arrow {
+          position: absolute;
+          width: 70px;
+          left: -270px;
+        }
+        .arrow-text {
+          bottom: -40px;
+          position: absolute;
+          left: -330px;
+          h2 {
+            font-size: 15px;
+            text-align: left;
+            line-height: 0;
+          }
+          p {
+            font-size: 10px;
+            width: 80px;
+          }
+        }
+      }
+    }
+    .intro-text {
+      position: absolute;
+      z-index: 10;
+      right: 110px;
+      top: 100px;
+      h2 {
+        font-size: 12px;
+        font-weight: 600;
+      }
+      h6 {
+        font-size: 10px;
+        font-weight: 200;
+      }
+      .h2-inrto-text ::before {
+        content: "";
+        position: absolute;
+        right: -12px;
+        border-right: 1px solid $blue-light;
+        border-bottom: 1px solid $blue-light;
+        bottom: -5px;
+      }
+      .h2-inrto-text ::after {
+        content: "";
+        position: absolute;
+        right: -12px;
+        bottom: 15px;
+        border-right: 1px solid $blue-light;
+        border-top: 1px solid $blue-light;
+      }
+    }
+  }
+}

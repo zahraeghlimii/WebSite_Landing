@@ -1,0 +1,150 @@
+//main-hero
+.main-hero {
+  top: 70px;
+  max-width: 1920px;
+  position: relative;
+  background-color: $bgcolor-hero;
+  display: flex;
+  justify-content: space-between;
+
+  .main-text {
+    height: 200px;
+    margin-left: 110px;
+    line-height: 1.5;
+    img {
+      width: 130px;
+    }
+    h4 {
+      color: $blue-drak;
+      font-size: 20px;
+    }
+    h1 {
+      color: $blue-drak;
+      font-size: 42px;
+      span {
+        color: $blue-light;
+      }
+    }
+  }
+  .main-img {
+    position: relative;
+    img {
+      position: absolute;
+      right: 0;
+      object-fit: cover;
+      height: 230px;
+      width: 630px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-hero {
+    position: relative;
+    left: 0;
+    height: 180px;
+    .main-img {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        height: 200px;
+        width: 530px;
+      }
+    }
+    .main-text {
+      position: relative;
+      z-index: 10;
+      margin-left: 50px;
+      h1 {
+        font-size: 36px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-hero {
+    position: relative;
+    left: 0;
+    height: 110px;
+    .main-img {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        height: 130px;
+        width: 300px;
+      }
+    }
+    .main-text {
+      position: relative;
+      z-index: 10;
+      h1 {
+        font-size: 22px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      img {
+        width: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-hero {
+    .main-img {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        height: 145px;
+        width: 270px;
+      }
+    }
+    .main-text {
+      position: relative;
+      z-index: 10;
+      width: 190px;
+      margin-left: 40px;
+      h1 {
+        font-size: 16px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+      img {
+        width: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-hero {
+    .main-text {
+      position: relative;
+      z-index: 10;
+      width: 130px;
+      margin-left: 40px;
+      h1 {
+        font-size: 16px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+    .main-img {
+      img {
+        height: 120px;
+        width: 230px;
+      }
+    }
+  }
+}

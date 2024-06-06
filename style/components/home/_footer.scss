@@ -29,7 +29,9 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      .footer-copypaste {
+        display: flex;
+      }
       a {
         text-decoration: none;
         color: $gray-light;
@@ -94,11 +96,49 @@ footer {
   }
 }
 
-@media (max-width:768px){
-  .footer-links{
-    a{
-      color: red;
-      font-size: 10px;
+@media screen and (max-width: 800px) {
+  .footer-content {
+    .footer-copypaste {
+      display: inline;
+      p,
+      span {
+        font-size: 11px;
+      }
+    }
+    .footer-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 290px;
+      a {
+        font-size: 11px;
+        
+      }
+      .landing-footer {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer-content {
+    .footer-copypaste {
+      display: flex;
+      span {
+        opacity: 0;
+      }
+    }
+    .footer-links {
+      display: flex;
+      text-align: center;
+      width: 150px;
+      margin-right: 20px;
+      a {
+        font-size: 10px;
+        span{
+          opacity: 0;
+        }
+      }
+
     }
   }
 }

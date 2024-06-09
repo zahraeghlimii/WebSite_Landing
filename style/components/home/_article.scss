@@ -48,3 +48,59 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .cards-content {
+    position: relative;
+    top: -300px;
+    .cord1-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      .card1-text {
+        position: relative;
+        border: 2px solid;
+      }
+      .car1-text-effect {
+        margin: 0 auto;
+      }
+    }
+    .revers {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .cards-content {
+    position: relative;
+    top: -400px;
+    .cord1-content {
+      .card1-img {
+        position: relative;
+        .img-1 {
+          width: 250px;
+        }
+        .img-2 {
+          width: 80px;
+        }
+      }
+      .car1-text-effect {
+        width: 120px;
+        p {
+          font-size: 12px;
+        }
+      }
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 12px;
+        width: 250px;
+      }
+    }
+  }
+}

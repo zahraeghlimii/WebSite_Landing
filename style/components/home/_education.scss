@@ -1,58 +1,58 @@
 //education
 .education {
-    background-color: $bgcolor-hero;
-    height: 400px;
-    .education-content {
-      margin: 0 auto;
-      padding: 15px 0;
-      max-width: 900px;
-      display: flex;
+  background-color: $bgcolor-hero;
+  height: 400px;
+  .education-content {
+    margin: 0 auto;
+    padding: 15px 0;
+    max-width: 900px;
+    display: flex;
+  }
+  .education-texts-content {
+    margin: 32px auto;
+    color: $blue-drak;
+    h4 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 2;
     }
-    .education-texts-content {
-      margin: 32px auto;
-      color: $blue-drak;
-      h4 {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 2;
+    h2 {
+      margin-bottom: 10px;
+      position: relative;
+      span {
+        color: $blue-light;
       }
-      h2 {
-        margin-bottom: 10px;
-        position: relative;
-        span {
-          color: $blue-light;
-        }
-        .span-education_title::after {
-          content: "";
-          position: absolute;
-          right: -18px;
-          width: 9px;
-          height: 9px;
-          top: -2px;
-          border-top: 2px solid $blue-light;
-          border-right: 2px solid $blue-light;
-        }
-        .span-education_title::before {
-          content: "";
-          position: absolute;
-          right: -18px;
-          width: 9px;
-          height: 9px;
-          bottom: -2px;
-          border-bottom: 2px solid $blue-light;
-          border-right: 2px solid $blue-light;
-        }
+      .span-education_title::after {
+        content: "";
+        position: absolute;
+        right: -18px;
+        width: 9px;
+        height: 9px;
+        top: -2px;
+        border-top: 2px solid $blue-light;
+        border-right: 2px solid $blue-light;
       }
-      p {
-        width: 410px;
-        margin-bottom: 40px;
+      .span-education_title::before {
+        content: "";
+        position: absolute;
+        right: -18px;
+        width: 9px;
+        height: 9px;
+        bottom: -2px;
+        border-bottom: 2px solid $blue-light;
+        border-right: 2px solid $blue-light;
       }
     }
+    p {
+      width: 410px;
+      margin-bottom: 40px;
+    }
+
     .btn-education-title {
       display: flex;
       width: 328px;
       justify-content: space-around;
-  
+
       .btn-1 {
         all: unset;
         background-color: $blue-light;
@@ -77,37 +77,246 @@
         }
       }
     }
-    .education-imgs-content {
-      display: flex;
-      width: 100%;
-      position: relative;
-      min-height: 300px;
-      max-width: 380px;
-      margin: 32px auto 0;
-      .icon {
-        position: absolute;
-        width: 60px;
-        top: 5%;
-        left: 23%;
+  }
+  .education-imgs-content {
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 300px;
+    max-width: 380px;
+    margin: 32px auto 0;
+    .icon {
+      position: absolute;
+      width: 60px;
+      top: 5%;
+      left: 23%;
+    }
+    .img-woman {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .img-man {
+      position: absolute;
+      width: 75%;
+      bottom: 10px;
+      left: 50px;
+      z-index: 1;
+    }
+    .img-dots {
+      position: absolute;
+      top: 220px;
+      right: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .education {
+    position: relative;
+    top: -150px;
+    .education-content {
+      .education-texts-content {
+        margin-left: 20px;
+        p {
+          font-size: 15px;
+          width: 420px;
+        }
       }
-      .img-woman {
-        position: absolute;
-        width: 50%;
-        top: 0;
-        right: 0;
-        z-index: 1;
-      }
-      .img-man {
-        position: absolute;
-        width: 75%;
-        bottom: 10px;
-        left: 50px;
-        z-index: 1;
-      }
-      .img-dots {
-        position: absolute;
-        top: 220px;
-        right: 70%;
+      .education-imgs-content {
+        margin-right: 20px;
+        width: 270px;
+        position: relative;
+        .img-woman {
+          width: 150px;
+        }
+        .img-man {
+          width: 200px;
+          position: absolute;
+          left: 0;
+          top: 120px;
+        }
+        .icon {
+          position: absolute;
+          left: 20px;
+        }
+        .img-dots {
+          position: absolute;
+          left: 120px;
+          top: 180px;
+        }
       }
     }
   }
+}
+@media screen and (max-width: 768px) {
+  .education {
+    position: relative;
+    top: -400px;
+    .education-content {
+      .education-texts-content {
+        margin-left: 20px;
+        p {
+          width: 300px;
+          font-size: 14px;
+        }
+        h4 {
+          font-weight: bold;
+          font-size: 14px;
+        }
+        h2 {
+          position: relative;
+          font-size: 16px;
+          .span-education_title::after {
+            position: absolute;
+            right: 40px;
+            top: -6px;
+          }
+          .span-education_title::before {
+            position: absolute;
+            right: 40px;
+            top: 16px;
+          }
+        }
+      }
+      .education-imgs-content {
+        width: 250px;
+        margin-right: 20px;
+        position: relative;
+        .img-woman {
+          position: absolute;
+          width: 130px;
+          right: 0;
+        }
+        .img-man {
+          width: 170px;
+          position: absolute;
+          left: 0;
+          top: 120px;
+        }
+        .icon {
+          width: 40px;
+          position: absolute;
+          left: 20px;
+        }
+        .img-dots {
+          position: absolute;
+          left: 0;
+          top: 200px;
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .education {
+    .education-content {
+      .education-imgs-content {
+        top: 30px;
+        position: relative;
+        width: 140px;
+        .img-woman {
+          width: 100px;
+        }
+        .img-man {
+          width: 130px;
+          position: absolute;
+          left: 0;
+          top: 80px;
+        }
+        .img-dots {
+          width: 60px;
+          position: absolute;
+          top: 140px;
+          left: 20px;
+        }
+        .icon {
+          width: 30px;
+          position: absolute;
+          left: 0;
+        }
+      }
+      .education-texts-content {
+        width: 250px;
+        p {
+          font-size: 12px;
+          width: 100%;
+        }
+        h2 {
+          position: relative;
+          font-size: 14px;
+          width: 250px;
+          .span-education_title::after {
+            position: absolute;
+            left: 40px;
+            top: 17px;
+            border-top: 1px solid $blue-light;
+            border-right: 1px solid $blue-light;
+          }
+          .span-education_title::before {
+            position: absolute;
+            left: 40px;
+            top: 32px;
+            border-bottom: 1px solid $blue-light;
+            border-right: 1px solid $blue-light;
+          }
+        }
+        h4 {
+          font-size: 12px;
+        }
+        .btn-education-title {
+          display: flex;
+          justify-content: start;
+          gap: 10px;
+          .btn-1 {
+            width: 60px;
+            padding: 10px 20px;
+          }
+          .btn_2 {
+            .link-btn-education {
+              font-size: 11px;
+              display: flex;
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .education {
+    height: 500px;
+    .education-content {
+      display: flex;
+      flex-direction: column-reverse;
+      .education-imgs-content {
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        top:0;
+      }
+      .education-texts-content {
+        width: 200px;
+        position: relative;
+        top: -90px;
+        margin: 0 auto;
+        text-align: left;
+        p {
+          font-size: 11px;
+
+        }
+        h4{
+          font-size: 13px;
+          font-weight: normal;
+        }
+        .btn-education-title{
+          position: relative;
+          top:-30px;
+        }
+      }
+    }
+  }
+}

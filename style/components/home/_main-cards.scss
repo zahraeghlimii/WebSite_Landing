@@ -1,57 +1,93 @@
 //section-main-cards
 .main-cards {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
-  
-    .box-background {
-      position: absolute;
-      top: 0;
-      z-index: -1;
-      width: 100%;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  // border: 2px solid rebeccapurple;
+
+  .box-background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .understand-quickly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    h2 {
+      color: $blue-drak;
+      text-align: center;
+      font-size: 30px;
+      position: relative;
+      margin-bottom: 30px;
     }
+    span {
+      color: $blue-light;
+    }
+    .understand-quickly-title::before {
+      content: "";
+      position: absolute;
+      right: -18px;
+      width: 9px;
+      height: 9px;
+      bottom: -2px;
+      border-bottom: 2px solid $blue-light;
+      border-right: 2px solid $blue-light;
+    }
+    .understand-quickly-title::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      width: 9px;
+      height: 9px;
+      top: -2px;
+      border-top: 2px solid $blue-light;
+      border-right: 2px solid $blue-light;
+    }
+    p {
+      color: $blue-drak;
+      text-align: center;
+      font-size: 16px;
+      width: 990px;
+      line-height: 150%;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-cards {
+    position: relative;
+    top: -30px;
     .understand-quickly {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 60px;
-      h2 {
-        color: $blue-drak;
-        text-align: center;
-        font-size: 30px;
-        position: relative;
-        margin-bottom: 30px;
-      }
-      span {
-        color: $blue-light;
-      }
-      .understand-quickly-title::before {
-        content: "";
-        position: absolute;
-        right: -18px;
-        width: 9px;
-        height: 9px;
-        bottom: -2px;
-        border-bottom: 2px solid $blue-light;
-        border-right: 2px solid $blue-light;
-      }
-      .understand-quickly-title::after {
-        content: "";
-        position: absolute;
-        right: -18px;
-        width: 9px;
-        height: 9px;
-        top: -2px;
-        border-top: 2px solid $blue-light;
-        border-right: 2px solid $blue-light;
-      }
       p {
-        color: $blue-drak;
-        text-align: center;
-        font-size: 16px;
-        width: 990px;
-        line-height: 150%;
+        width: 800px;
+        font-size: 14px;
       }
     }
   }
+}
+@media screen and (max-width: 800px) {
+  .main-cards {
+    position: relative;
+    top: -300px;
+    .understand-quickly {
+      p {
+        width: 450px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-cards {
+    position: relative;
+    top: -350px;
+    .understand-quickly {
+      p {
+        width: 250px;
+      }
+    }
+  }
+}

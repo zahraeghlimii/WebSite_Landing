@@ -940,7 +940,7 @@ header .menu-desktop .navbar_menu .navbar_btns .box_lang:focus .lang-list-dropdo
     width: 650px;
   }
   .main-cards .main-cards-member .card-member-1 {
-    border-radius: 80px;
+    border-radius: 20px;
   }
   .main-cards .main-cards-member .card-member-1 img {
     -webkit-filter: drop-shadow(3px -3px #2977d7);
